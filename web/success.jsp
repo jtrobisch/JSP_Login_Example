@@ -48,6 +48,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Full Name:</b></h5>
           <h6 class="w3-text-teal"><%= obj.name %></h6>
+        </div>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>Web Account:</b></h5>
+          <table class="w3-text-teal">
+            <tr class="text-align:left;">
+              <th>Bespoke ID</th>
+              <th>Username</th>
+              <th>Password</th>
+            </tr>
+            <tr>
+              <td><h6 class="w3-text-teal"><%= obj.ID %></h6></td>
+              <td><h6 class="w3-text-teal"><%= obj.username %></h6></td>
+              <td><h6 class="w3-text-teal"><%= obj.password %></h6></td>
+            </tr>
+            </table>
           <hr>
         </div>
          <div class="w3-container">
@@ -65,7 +80,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h6 class="w3-text-teal">£<%= obj.salary %></h6>
           <hr>
         </div>
+       </div>
       </div>
+
     <!-- End Right Column -->
     </div>
   <!-- End Grid -->
